@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: #eef0f2;
+    
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    
+}
+
+.h1,.h2,.h3{
+    color: 4361ee;
+}
+
+.h2,.h3{
+    
+    width: 30vw;
+    background-color: #5c5c5c;
+}
+.copy{
+    float: right;
+    
+}
+.password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h3{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.h2{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    
+}
+.output{
+    background-color: #5c5c5c;  
+    border: none;
+    color: black;
+    height: 2rem;
+    font-size: large;
+    font-weight: 800;
+}
+::placeholder{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 0.2rem;
+    opacity: 0.7;
+}
+.copied{
+    position: absolute;
+    transform:translateX(-9px)translateY(-17px) ;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+}
+.scale{
+    visibility: visible;
+}
+.icon{
+    background-color:#5c5c5c;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.password{
+    margin-bottom: 1rem;
+
+}
+.slider{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.slider:hover{
+    color:rgb(158, 243, 73)
+}
+.slider::-webkit-slider-thumb {
+    background-color: red;
+}
+.c1,.c2,.c3,.c4{
+    padding-bottom:0.5rem;
+}
+.strength{
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.generatebtn{
+    padding: 0.6rem 1.6rem;
+    font-size: larger;
+    font-weight: 600;
+    width: 100%;
+    
+    background-color: #5c5c5c;
+    border:2px solid #eef0f2;
+}
+#lowercase{
+    border:2px solid #5c5c5c;
+    
+}
+
+.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input{
+    /* appearance: none; */
+    cursor: pointer;
+    /* background-color: cyan; */
+    border-radius:0.5rem;
+}
+.slider{
+    cursor: pointer;
+    /* appearance: none; */
+    height: 0.75rem;
+    background-color: violet;
+    background-image: linear-gradient(violet,brown,grey,black);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.strengthColor{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+}
+.strength{
+    display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}

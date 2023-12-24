@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9fd87d42bc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="h1"><h1>PASSWORD GENERATOR</h1></div>
+            <div class="h2">
+                <input readonly placeholder="Password..." data-passworddisplay  class="output">
+                <button class="copy" data-copy>
+                    <p class="copied" data-copymsg>copied</p>
+                    <i class="fa-regular fa-copy icon"></i>
+                </button>
+            </div>
+            <div class="h3">
+                <div class="password">
+                    <h3>Password Length</h3>
+                    <p class="passlength" data-lengthnumber></p>
+                </div>
+
+                <input type="range" min="1" max="20" class="slider"   data-lengthslider>
+
+                <div class="choises">
+                    <div class="c1">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase" class="uppercase" >Include Uppercase Letters</label>
+                    </div>
+                    
+                    <div class="c2">
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase" class="lowercase">Include Lowercase Letters</label>
+                    </div>
+
+                    <div class="c3">
+                        <input type="checkbox" id="number">
+                        <label for="number" class="numbers" >Include Numbers</label>
+                    </div>
+                    
+                    <div class="c4">
+                        <input type="checkbox" id="symbols"> 
+                        <label for="symbols" class="symbols">Include Symbols</label>
+                    </div>
+                </div>
+                <div class="strength">
+                    <div class="level">Strength</div>
+                    <div class="strengthColor" data-indicator></div>
+                </div>
+                <button class="generatebtn">GENERATE PASSWORD</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="task.js"></script>
+    
+    
+</body>
+</html>
